@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <script src="assets/js/index.js"></script> <!--1* Script -->
+    <script src="assets/js/index.js"></script>
+    <!--1* Script -->
 </head>
+
 <body>
     <main>
-        <p id="test">Lista animali: </p><br>
-        <h2>Nuke.</h2>
-        <button id="btn">Cliccami!</button><br><br><br>
-<!-- bottone test 2 -->
-<p>4 + 4</p>
-        <button onclick= "somma(event)">test</button>
+        <div class="container">
+            <h1>🍝 Pagina di prova 🍕</h1>
+            <!-- reset -->
+            <div class="itemCont">
+                <button type="button" id="resetBtn" class="btn">Reset</button>
+                <p>!!! Resetta la pagina, non toccare D: !!!</p>
+            </div>
+            <!-- username -->
+            <div class="itemCont">
+                <label id=myLabel for="username">Qual'è il tuo username?</label> <br>
+                <input type="text" class="textInput" id="myText"> <br>
+                <button type="button" class="btn" id="submitUser">Submit</button>
+            </div>
+            <!-- biscotto -->
+            <div class="itemCont">
+                <h2 id="biscottoH2">Dammi un biscotto :3</h2>
+                <label for="dareCookie">*Biscotto Virtuale*</label>
+                <input type="checkbox" id="biscottoBox" name="dareCookie"> <br>
+                <button id="biscottoBtn" class="btn">Invia</button>
+            </div>
+            <!-- addizione e sottrazione -->
+            <div class="itemCont calcBtn">
+                <h2>Conteggio</h2>
+                <label id=theNumber for="numbers">0</label>
+                <div class="incrMenu">
+                    <button id="decBtn" class="btn">-</button>
+                    <button id="resBtn" class="btn">C</button>
+                    <button id="incBtn" class="btn">+</button>
+                </div>
+            </div>
+            <div class="itemCont">
+                <h2>Nuke.</h2>
+                <button id="btn" class="btnRed">Non Cliccare!</button>
+            </div>
+        </div>
     </main>
 
+    <!-- 🡣🡣🡣🡣🡣🡣 Roba dell'esercizio 🡣🡣🡣🡣🡣🡣 -->
+    <aside>
+        <hr>
+        <p id="test">Lista animali: </p><br>
+        <!-- bottone test 2 -->
+        <p>4 + 4</p>
+        <button onclick="somma(event)" style="color: black;">test</button>
+    </aside>
+    <!---------- script ------------>
     <script>
-        alert('Parto per secondo'); // 2* Script
+    //     alert('Parto per secondo'); 2* Script
     </script>
-    <script src="assets/js/naming.js"></script> <!--3* Script -->
+    <script src="assets/js/naming.js"></script>
+    <!--3* Script -->
 </body>
 
 

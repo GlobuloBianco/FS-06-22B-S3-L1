@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -16,4 +23,58 @@ body {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+    margin: 2em;
+}
+
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.textInput {
+    width: 50%;
+    margin-top: 1em;
+    outline: 2px solid rgb(0, 204, 255);
+    border: 3px solid pink; 
+    color: red;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 0.5em;
+    width: 50%;
+    border: 2px solid white;
+    color: white;
+    background: #67e1fe;
+    background: linear-gradient(90deg, #6cc1e2, #f90db2);
+    animation: gradient 15s ease infinite;
+    background-size: 700% 700%;
+}
+
+.btnRed {
+    background-color: red;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.itemCont {
+    margin: 2em 0 2em 0;
+    padding-bottom: 2em;
+    border-bottom: 2px dashed black;
+}
+
+.incrMenu {
+    display: flex;
+}
+
+.incrMenu button {
+    margin: 1em 0.5em;
 }
